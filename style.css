@@ -65,9 +65,8 @@ a {
 /* header styles */
 .my-portfolio{
     display: flex;
-    justify-content: space-around;
-    margin: 10px 0px 5px 50px;
-    position: sticky;
+    justify-content: space-between;
+    margin: 10px 50px 5px 50px;
     background: var(--bg-color);
 }
 .navlist{
@@ -101,14 +100,14 @@ a {
   
   @media (max-width: 884px) {
     .navlist .my-portfolio h3{
-    position: absolute;
+    position: sticky;
     top: 100%;
     left: 0;
     right: 0;
     color: var(--text-color);
     flex-direction: row;
     justify-content: flex-end;
-    margin-right: 10px;
+    margin-right: 20px;
     align-items: center;
     padding: 10px 0;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
@@ -364,7 +363,7 @@ a {
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 20px;
+  gap: 15px;
 }
 
 .project-card {
@@ -417,7 +416,7 @@ a {
 }
 
 .project-tags span {
-  padding: 6px 10px;
+  padding: 6px 8px;
   background: #f8f9fa;
   border-radius: 20px;
   font-size: 12px;
@@ -557,7 +556,7 @@ footer {
 
 .footer-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-bottom: 30px;
 }
 
@@ -600,7 +599,7 @@ footer {
 
 .footer-bottom {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding-top: 20px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -629,7 +628,8 @@ footer {
 }
 
 @media (max-width: 375px) {
-  .hero .about .skills .projects .contact footer{
-    max-width: 100%;
+  footer{
+    max-width:100%;
+    padding: 0px 80px, 0px 50px;
   }
 }

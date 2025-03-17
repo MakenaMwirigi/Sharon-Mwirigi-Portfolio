@@ -76,9 +76,9 @@ a {
 .navlist{
     text-align: center;
     display: flex;
-    gap: 40px;
+    gap: 30px;
     list-style: none;
-    color: var(--h3-color);
+    color: var(--text-color);
 }
 .navlist a {
     position: relative;
@@ -207,8 +207,8 @@ a {
   
   .img img{
     margin-bottom: 20px;
-    width:350px;
-    height: 350px;
+    width:300px;
+    height: 300px;
   }
 
   .hero{
@@ -615,27 +615,76 @@ footer {
 
 
 @media (max-width: 545px) {
+  .my-portfolio h3{
+    font-size: 16px;
+  }
   .hero .skills .projects .contact footer{
     max-width: 100%;
-    margin: 0;
+    margin: 0 10px 0 10px;
     padding: 0;
+  }
+  .navlist{
+    gap: 16px;
+  }
+  .navlist a{
+    font-size: 14px;
+  }
+
+  .img img{
+    margin-bottom: 20px;
+    width: 220px;
+    height: 220px;
   }
 
   .about .info-cards{
     flex-direction: column;
     max-width: 100%;
-    margin: 0;
+    margin: 0 5px 0 5px;
     padding: 0;
   }
 
   .btn-primary{
     text-align: center;
   }
+
+  .footer-content {
+    display: block;
+    justify-content: center;
+  }
+  .footer-brand{
+    justify-content: center;
+  }
+  .footer-links{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .footer-bottom{
+    display: block;
+    justify-content: center;
+  }
+  .footer-bottom p:last-child{
+    padding-top: 10px;
+  }
 }
 
 @media (max-width: 375px) {
+  .my-portfolio h3{
+    font-size: 14px;
+  }
   footer{
     max-width:100%;
     padding: 0px 80px, 0px 50px;
+  }
+  
+  .navlist{
+    gap: 10px;
+  }
+  .navlist a{
+    font-size: 11px;
+  }
+
+  .buttons{
+    justify-content: center;
   }
 }
